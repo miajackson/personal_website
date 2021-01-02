@@ -1,7 +1,8 @@
 import React from 'react';
 import './App.css';
-import Projects from './projects.js'
-import Art from './art.js'
+import Projects from './projects.js';
+import Art from './art.js';
+import Me from './images/me.png'
 
 import {
   BrowserRouter as Router,
@@ -31,7 +32,7 @@ export default function App() {
         </div>
         </nav>
         <Switch>
-          <Route exact path="/">
+          <Route path="/">
             <Home />
           </Route>
           <Route path="/projects">
@@ -49,6 +50,7 @@ export default function App() {
         </Switch>
       </div>
     </Router>
+
   )
 }
 
@@ -63,7 +65,7 @@ function Home() {
       </div>
     </div>
       
-        <img className="photo" src={require('./images/me.png')} alt="me"/>
+        <img className="photo" src={Me} alt="me"/>
         <div className="description">
           <p>Hi, I'm Mia!</p>
           <p>I'm a senior at Yale studying applied mathematics and originally from Richmond, VA. During college, I've worked on projects at the intersection of healthcare and technology. I'm also passionate about education and have been a teaching assistant for middle and high schoolers, undergraduates, and the formerly incarcerated.</p>
