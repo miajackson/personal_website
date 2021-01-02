@@ -19,7 +19,7 @@ function Art() {
         <img className="artwork" src={require('./images/winter-art.jpeg')} alt="me"/>
         <img className="artwork artwork2" src={require('./images/colorful-face.jpeg')} alt="me"/>
         <img className="artwork artwork3" src={require('./images/black-white-face.jpeg')} alt="me"/>
-        <img className="artwork" src={require('./images/four-faces.jpeg')} alt="me"/>
+        <img className="artwork faces-art" src={require('./images/four-faces.jpeg')} alt="me"/>
         <img className="artwork abstract" src={require('./images/abstract-art.jpeg')} alt="me"/>
 
       </div>

@@ -40,16 +40,34 @@
   
 .artwork {
     width: 100%;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
 }
 
 .artwork2 {
     grid-column: 2;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
+}
+
+.faces-art {
+ grid-column: 2;
 }
 
 .artwork3 {
     grid-column: 3;
+    animation: fadein 1s;
+    -moz-animation: fadein 1s; /* Firefox */
+    -webkit-animation: fadein 1s; /* Safari and Chrome */
+    -o-animation: fadein 1s; /* Opera */
 }
-
+.abstract{
+  grid-column: 3;
+}
 
 @media only screen and (max-width: 900px) {
   #art-grid {
@@ -73,13 +91,18 @@
   }
   .artwork2 {
     grid-column: 1;
+    grid-row: 1;
   }
   .artwork3 {
     grid-column: 1;
+    grid-row: 3;
   }
   .abstract {
     grid-column: 1;
-    grid-row: 3;
+    grid-row: 2;
   }
+  .faces-art {
+    grid-column: 1;
+   }
 
 }
