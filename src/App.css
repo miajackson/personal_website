@@ -1,38 +1,175 @@
 .App {
+  background-color: white;
+  font-family: 'Helvetica';
+  margin-left: 1%;
+  transition: opacity 0.5s;
+  opacity: 1;
+}
+
+@keyframes fadein {
+  from {
+      opacity:0;
+  }
+  to {
+      opacity:1;
+  }
+}
+
+.name {
+  font-family: inherit;
+  font-weight: 150;
+  color: black;
+  font-size: 2em;
+  left: 5%;
+  /*text-align: center;*/
+  
+}
+
+.contact {
+  color: black;
+  font-size: 1.5em;
+}
+
+.contact-div {
+  right: 0%;
+  margin-left: 50%;
+  font-weight: 200;
+}
+
+.name-div {
+  display: flex;
+  /*justify-content: "center";*/
+  font-family: inherit;
+  align-items: center;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.topic {
+  font-size: 1.6em;
+  text-decoration: inherit;
+  font-family: 'Helvetica';
+  position: fixed;
+  color: black;
+  font-weight: 50.5;
+  transition-duration: 500ms;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home {
+  top: 58%;
+}
+.project {
+  top: 62%
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.writing {
+  top: 66%
 }
 
-.App-link {
-  color: #61dafb;
+.art {
+  top: 70%
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.contact {
+  top: 74%
 }
+
+.topic:hover {
+  color:#d1bbc6
+}
+
+.search-list {
+  margin-top: 28%;
+  margin-left: .5%;
+  display: inline-block;
+  position: absolute;
+  /*flex-flow: column;*/
+}
+
+.photo {
+  position: absolute;
+  width: 40%;
+  right: 7%;
+  margin-top: 0%;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+.description {
+  background: #d1bbc6;
+  position: absolute;
+  /*border-color: #d1bbc6;*/
+  color:black;
+  font-family: inherit;
+  font-weight: 150;
+  font-size: 1.1em;
+  width: 42%;
+  right: 43%;
+  top: 34%;
+  padding: 1%;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  z-index: '-100';
+}
+
+.lines {
+  width:37%;
+  position: absolute;
+  resizeMode:'contain';
+  /*position: absolute;*/
+}
+
+.sidebar {
+  position: absolute;
+}
+
+.contact-description {
+  position: absolute;
+  text-align: center;
+  font-family: inherit;
+  font-size: 1.7em;
+  top: 48%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+
+a {
+  text-decoration: none;
+  color: #5e86e6
+}
+
+.arrow-to-email {
+  width: 16%;
+  margin-left: 53%;
+  top: 11%;
+  position: absolute;
+  animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox */
+  -webkit-animation: fadein 1s; /* Safari and Chrome */
+  -o-animation: fadein 1s; /* Opera */
+}
+
+.name-contact {
+  color: inherit;
+}
+
+.name-contact:hover {
+  color:#5e86e6
+}
+
+
