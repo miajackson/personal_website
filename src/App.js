@@ -22,9 +22,7 @@ export default function App() {
         <div>
           <Link className="topic project" to="/projects">projects</Link>
         </div>
-        <div>
-          <Link className="topic writing" to="/writing">writing</Link>
-        </div>
+
         <div>
           <Link className="topic art" to="/art">art</Link>
         </div>
@@ -64,6 +62,7 @@ function Home() {
         <p className="contact">mia.jackson@yale.edu</p>
       </div>
     </div>
+      
         <img className="photo" src={require('./images/me.png')} alt="me"/>
         <div className="description">
           <p>Hi, I'm Mia!</p>
@@ -111,3 +110,10 @@ function Writing() {
 
 
 
+
+/*
+        <div>
+          <Link className="topic writing" to="/writing">writing</Link>
+        </div>
+
+*/

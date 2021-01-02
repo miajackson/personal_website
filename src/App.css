@@ -66,11 +66,11 @@
 }
 
 .art {
-  top: 70%
+  top: 66%
 }
 
 .contact {
-  top: 74%
+  top: 70%
 }
 
 .topic:hover {
@@ -107,7 +107,7 @@
   width: 42%;
   right: 43%;
   top: 34%;
-  padding: 1%;
+  padding: 2%;
   animation: fadein 1s;
   -moz-animation: fadein 1s; /* Firefox */
   -webkit-animation: fadein 1s; /* Safari and Chrome */
@@ -173,3 +173,10 @@ a {
 }
 
 
+@media only screen and (max-width: 900px) {
+  .description {
+    width: 70%;
+    right: 7%;
+    top: 70%;
+  }
+}
