@@ -14,6 +14,7 @@ import {
 
 export default function App() {
   return (
+  
     <Router>
       <div>
         <nav className="search-list">
@@ -23,7 +24,6 @@ export default function App() {
         <div>
           <Link className="topic project" to="/projects">projects</Link>
         </div>
-
         <div>
           <Link className="topic art" to="/art">art</Link>
         </div>
@@ -32,7 +32,7 @@ export default function App() {
         </div>
         </nav>
         <Switch>
-          <Route path="/">
+          <Route exact path="/">
             <Home />
           </Route>
           <Route path="/projects">
@@ -46,6 +46,9 @@ export default function App() {
           </Route>
           <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/personal_website">
+            <Home />
           </Route>
         </Switch>
       </div>

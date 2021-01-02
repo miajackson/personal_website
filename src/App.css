@@ -154,7 +154,7 @@ a {
 }
 
 .arrow-to-email {
-  width: 16%;
+  width: 15%;
   margin-left: 53%;
   top: 11%;
   position: absolute;
@@ -179,5 +179,12 @@ a {
     width: 70%;
     right: 7%;
     top: 70%;
+  }
+
+}
+
+@media only screen and (max-width: 1050px) {
+  .arrow-to-email {
+    display:none
   }
 }
