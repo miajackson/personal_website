@@ -1,13 +1,15 @@
 import React from 'react';
 import './projects.css';
-
+import {
+  Link
+} from "react-router-dom";
 //const { innerWidth: width, innerHeight: height } = window;
 
 function Projects() {
     return (
       <div className="Projects">
         <div className="name-div">
-          <p className="name">mia jackson</p>
+          <p className="name"><Link to="/" style={{"color": "black"}}>mia jackson</Link></p>
           <div className="contact-div">
             <p className="contact">mia.jackson@yale.edu</p>
           </div>

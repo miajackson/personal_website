@@ -57,7 +57,7 @@ function Home() {
   return (
     <div className="App">
     <div className="name-div">
-      <p className="name">mia jackson</p>
+    <p className="name"><Link to="/" style={{"color": "black"}}>mia jackson</Link></p>
       <div className="contact-div">
         <p className="contact">mia.jackson@yale.edu</p>
       </div>
@@ -81,7 +81,7 @@ function Contact() {
   return (
     <div className="App">
     <div className="name-div">
-      <p className="name">mia jackson</p>
+    <p className="name"><Link to="/" style={{"color": "black"}}>mia jackson</Link></p>
       <div className="contact-div">
         <p className="contact"><a href="mailto:mia.jackson@yale.edu" className="name-contact">mia.jackson@yale.edu</a></p>
       </div>
